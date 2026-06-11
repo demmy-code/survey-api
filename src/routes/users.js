@@ -1,11 +1,14 @@
 const express = require('express');
 const router = express.Router();
-const User = require('../models/users');
+const User = require('../models/User');
 
 router.get('/welcome/:name', async (req, res) => {
     try {
+        console.log(req.params)
 const { name } = req.params;
+    console.log(name)
       const findUser = await User.findOne({ name });
+    //  const findUser = await User.find({});
 
       console.log(findUser)
 
