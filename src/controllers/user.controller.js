@@ -2,11 +2,10 @@ export const getUserByName = async (req, res) => {
     try {
         console.log(req.params)
         const { name } = req.params;
-        console.log(name)
         const findUser = await User.findOne({ name });
         //  const findUser = await User.find({});
 
-        console.log(findUser)
+        console.log(typeof findUser)
 
         if (!findUser) {
             return res.status(404).json({
