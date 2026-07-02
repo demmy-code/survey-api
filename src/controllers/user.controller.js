@@ -1,3 +1,5 @@
+import User from '../models/User.js';
+
 export const getUserByName = async (req, res) => {
     try {
         console.log(req.params)
