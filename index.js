@@ -1,6 +1,6 @@
-require('dotenv').config({ path: '../.env', quiet: true });
+require('dotenv').config({ path: './.env', quiet: true });
 const mongoose = require('mongoose');
-const app = require('./app');
+const app = require('./src/app');
 
 console.log(process.env.MONGO_URI);
 mongoose.connect(process.env.MONGO_URI, { bufferCommands: false })
