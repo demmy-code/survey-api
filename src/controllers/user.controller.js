@@ -2,9 +2,9 @@
 import {User ,Ratings} from '../models/User.models.js';
 
 export const getUserById = async (req, res) => {
-    console.log('MONGO_URI:', process.env.MONGO_URI);
-    console.log(process.env.MONGO_URI);
-    console.log('Request Params:', req.params);
+    // console.log('MONGO_URI:', process.env.MONGO_URI);
+    // console.log(process.env.MONGO_URI);
+    // console.log('Request Params:', req.params);
 
     try {
         const { id } = req.params;
